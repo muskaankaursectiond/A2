@@ -1,0 +1,155 @@
+/* Consistent Color Scheme and Typography */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#e6e2d3;
+    color:#405d27;
+    font-size: 10px;
+}
+
+header, footer {
+    background-color:#405d27; 
+    color: #e6e2d3;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:#e6e2d3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Button hover effects and animations */
+a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+/* Loading animation example */
+ #home {
+    animation: fadeIn 2s ease-in-out;
+ }
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* card color scheme and effects */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(48, 224, 32, 0.2);
+    transition: 0.3s;
+    padding: 16px;
+    background-color: #f1f1f1;
+  }
+  .card-img {
+     width:100%; 
+    height: auto; 
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(26, 32, 190, 0.2);
+    transform: scale(1.05);
+  }
+
+  /* btn hover effect */
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  .container {
+    padding: 16px;
+  }
+  .container h4{
+font-size: 28px;
+margin-bottom: 8px;
+  }
+  .container p{
+    font-size: 15px;
+     }
+
+     /* card button hover effect */
+  .container .btn{
+    display:inline-block;
+    padding: 8px 16px;
+    background-color:#405d27;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color:white;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  .row{ margin: 0 -5px;}
+  
+   .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+
+header, footer {
+    padding: 1rem;
+    color:white;
+}
+
+.h2{
+    color:#3e4444;
+}
+
+/* For mobile phones */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* For tablets */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin: 0 30px;
+    }
+}
+
+/* For desktop */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    header, footer {
+        padding: 2rem;
+    }
+}
+/* Custom footer styling */
+footer {
+    background-color:#405d27;
+    padding: 20px;
+}
